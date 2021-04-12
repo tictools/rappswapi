@@ -1,5 +1,6 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const webpack = require('webpack')
 
 module.exports = {
   entry: './src/main.js',
@@ -36,6 +37,11 @@ module.exports = {
       title: 'RAPPSWAPI',
       template: './src/index.html',
       hash: true
+    }),
+    new webpack.DefinePlugin({
+      'process.env': {
+        VERSION: JSON.stringify(require('./package.json').version)
+      }
     })
   ],
   output: {

@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link, withRouter } from 'react-router-dom'
 import PropTypes from 'prop-types'
-import { version } from '../../../../package.json'
 import { ROUTES } from '../../constants'
 import styles from './main-header.css'
 
@@ -25,8 +24,8 @@ const MainHeader = ({ title, ...router }) => {
   const navBarContent = getNavBarContent(pathname)
   return (
     <div className={styles['main-header__container']}>
-      <h1  className={styles['main-header__header']}>{title}</h1>
-      <p className={styles['main-header__version']}>{version}</p>
+      <h1 className={styles['main-header__header']}>{title}</h1>
+      <p className={styles['main-header__version']}>{process.env.VERSION}</p>
       {!isHomePath &&
         <nav className={styles['main-header__nav']}>
           {navBarContent}
