@@ -1,0 +1,20 @@
+@import "./common.css";
+
+.link-base {
+    background-color: var(--grey-10);
+    border: 1px solid var(--grey-25);
+    border-radius: 10px;
+    color: var(--grey-75);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    padding: .5rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+.link-base:hover {
+    border-color: var(--star-wars--yellow-50);
+    background-color: var(--star-wars--yellow-50);
+}

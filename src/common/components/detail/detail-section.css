@@ -1,0 +1,10 @@
+@import "../../../common/styles/common.css";
+
+.detail-section__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: var(--margin-top--category-section);
+    height: var(--height-category-section);
+    width: var(--width-100);
+}

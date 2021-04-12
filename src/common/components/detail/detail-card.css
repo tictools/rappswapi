@@ -1,0 +1,62 @@
+@import "../../../common/styles/common.css";
+
+.detail__container {
+    width: var(--width-75);
+}
+
+.detail__header {
+    composes: section-header from '../../styles/section-header.css';
+    width: var(--width-100);
+}
+
+.detail__container-list {
+    display: flex;
+    flex-direction:  column;
+    align-items: center;
+    width: var(--width-100);
+}
+
+.detail__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: var(--width-90);
+}
+
+.detail__list-item{
+    margin: 1.5rem 0;
+    width: var(--width-30);
+}
+
+.detail__list-item--header{
+    border-radius: 10px 10px 0 0;
+    box-sizing: border-box;
+    background-color: var(--grey-15);
+    font-weight: bold;
+    margin: .15rem 0;
+    padding: .75rem;
+    text-align: center;
+}
+
+.detail__list-item--content{
+    border-radius: 0 0 10px 10px;
+    box-sizing: border-box;
+    background-color: var(--grey-10);
+    margin: .15rem 0;
+    padding: .75rem;
+    text-align: center;
+}
+
+.detail__label {
+    border-radius: 5px;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: var(--grey-25);
+    padding: .5rem;
+    text-align: center;
+    text-transform: uppercase;
+}

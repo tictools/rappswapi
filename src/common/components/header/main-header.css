@@ -1,0 +1,40 @@
+.main-header__container{
+    margin: 0 0 1rem 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.main-header__header {
+    margin-bottom: 0.5rem;
+}
+
+.main-header__version {
+    font-size: .75rem;
+    margin: 0;
+}
+
+.main-header__nav {
+    border-top: 1px solid var(--grey-50);
+    border-bottom: 1px solid var(--grey-50);
+    display: flex;
+    justify-content: center;
+    padding: .5rem;
+    width: 100%;
+}
+
+.main-header__link-container {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+
+.main-header__link {
+    composes: link-base from "../../../common/styles/link.css";
+    margin: 0.25rem 1rem;
+    text-transform: uppercase;
+    width: 40%;
+}

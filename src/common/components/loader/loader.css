@@ -1,0 +1,16 @@
+.loader__icon--spinner {
+    animation: spin 2s ease-in-out infinite;
+}
+
+@keyframes spin {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.15;
+    }
+    100% {
+        opacity: 1;
+    }
+}
