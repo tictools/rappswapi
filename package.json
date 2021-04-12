@@ -1,0 +1,56 @@
+{
+  "name": "swapi",
+  "version": "1.1.0",
+  "description": "React application for consuming Star Wars API",
+  "main": "index.js",
+  "author": "tictools",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack --mode production",
+    "start:dev-server": "webpack serve --config ./webpack.config.js --hot --mode development",
+    "start": "node server/index.js",
+    "eslint": "standard .",
+    "eslint:fix": "standard . --fix",
+    "test": "jest --config test/jest.config.js"
+  },
+  "dependencies": {
+    "core-js": "^3.9.1",
+    "css-vars-ponyfill": "^2.4.3",
+    "express": "^4.17.1",
+    "postcss-preset-env": "^6.7.0",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-router-dom": "^5.2.0",
+    "regenerator-runtime": "^0.13.7"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.8",
+    "@babel/preset-env": "^7.13.9",
+    "@babel/preset-react": "^7.12.13",
+    "babel-jest": "^26.6.3",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.1.1",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.6",
+    "html-webpack-plugin": "^5.2.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^26.6.3",
+    "jest-css-modules-transform": "^4.2.0",
+    "postcss-loader": "^5.2.0",
+    "react-test-renderer": "^17.0.1",
+    "standard": "16.0.3",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.24.3",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "eslintConfig": {
+    "extends": "./node_modules/standard/eslintrc.json"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "ie >= 9"
+  ]
+}
