@@ -1,7 +1,7 @@
-import React, { useContext } from "react";
-import { CATEGORIES } from "../../constants";
-import GlobalContext from "../../../context/global-context";
-import styles from "./select-bar-category.css";
+import React, { useContext } from "react"
+import { CATEGORIES } from "../../constants"
+import GlobalContext from "../../../context/global-context"
+import styles from "./select-bar-category.css"
 
 /**
  * Functional component that renders a category search bar
@@ -9,11 +9,10 @@ import styles from "./select-bar-category.css";
  * @returns {React.Element}
  */
 export const SelectBarCategory = () => {
-  const { globalState, setGlobalState } = useContext(GlobalContext);
-
+  const { globalState, setGlobalState } = useContext(GlobalContext)
   const updateCategory = (category) => {
-    setGlobalState({ ...globalState, category });
-  };
+    setGlobalState({ ...globalState, category })
+  }
 
   return (
     <div className={styles["search-category__container"]}>
@@ -28,9 +27,9 @@ export const SelectBarCategory = () => {
                 {item}
               </button>
             </li>
-          );
+          )
         })}
       </ul>
     </div>
-  );
-};
+  )
+}

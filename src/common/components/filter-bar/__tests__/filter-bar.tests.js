@@ -34,7 +34,7 @@ describe("FilterBar", () => {
 
     expect(labelElements).toHaveLength(EXPECTED.LENGTH.TWO)
     expect(selectElement).toHaveLength(EXPECTED.LENGTH.ONE)
-    expect(optionElements).toHaveLength(EXPECTED.LENGTH.THREE)
+    expect(optionElements).toHaveLength(EXPECTED.LENGTH.TWO)
     expect(inputElement).toHaveLength(EXPECTED.LENGTH.ONE)
   })
 
