@@ -1,6 +1,7 @@
 module.exports = {
   bail: false,
   collectCoverage: true,
+  testPathIgnorePatterns: ["/src/common/models/__tests__/mocks/"],
   coveragePathIgnorePatterns: ["fetch", "-mock.js"],
   moduleNameMapper: {
     "\\.(css|less|scss|sass)$": "identity-obj-proxy",
@@ -11,4 +12,4 @@ module.exports = {
   },
   rootDir: "./../",
   verbose: true,
-};
+}
