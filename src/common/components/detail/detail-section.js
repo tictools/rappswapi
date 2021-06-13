@@ -1,8 +1,14 @@
-import React from 'react'
-import { Loader } from '../loader/loader'
-import { DetailCardWithRouter as DetailCard } from './detail-card'
-import styles from './detail-section.css'
+import React from "react"
+import PropTypes from "prop-types"
+import { Loader } from "../loader/loader"
+import { DetailCardWithRouter as DetailCard } from "./detail-card"
+import styles from "./detail-section.css"
 
+const propTypes = {
+  item: PropTypes.object.isRequired,
+  category: PropTypes.array.isRequired,
+  isLoading: PropTypes.bool.isRequired,
+}
 /**
  * Functional component that returns a detail section
  *
@@ -13,16 +19,19 @@ import styles from './detail-section.css'
  */
 export const DetailSection = ({ item, category, isLoading }) => {
   return (
-    <section className={styles['detail-section__container']}>
-      {
-                isLoading
-                  ? <Loader />
-                  : <DetailCard {...{
-                    item,
-                    category
-                  }}
-                    />
-            }
+    <section className={styles["detail-section__container"]}>
+      {isLoading ? (
+        <Loader />
+      ) : (
+        <DetailCard
+          {...{
+            item,
+            category,
+          }}
+        />
+      )}
     </section>
   )
 }
+
+DetailSection.propTypes = propTypes

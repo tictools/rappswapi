@@ -8,8 +8,8 @@ export const getSpecyModel = (specy) => {
     hair_colors,
     eye_colors,
     average_lifespan,
-    language
-  } = specy.result.properties
+    language,
+  } = specy.result.properties;
 
   return {
     header: name,
@@ -20,6 +20,6 @@ export const getSpecyModel = (specy) => {
     hair_colors,
     eye_colors,
     average_lifespan,
-    language
-  }
-}
+    language,
+  };
+};

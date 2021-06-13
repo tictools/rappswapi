@@ -1,54 +1,53 @@
 @import "../../../common/styles/common.css";
 
 .filter-bar__container {
-    border-top: 1px dotted var(--grey-50);
-    border-bottom: 1px dotted var(--grey-50);
-    display: flex;
-    margin-bottom: .5rem;
-    padding: .5rem 0;
-    justify-content: space-around;
-    width: 100%;
+  border-top: 1px dotted var(--grey-50);
+  border-bottom: 1px dotted var(--grey-50);
+  display: flex;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 0;
+  justify-content: space-around;
+  width: 100%;
 }
 
 .filter-bar__selector,
 .filter-bar__input {
-    display: flex;
-    align-items: center;@import "../../../common/styles/common.css";
-    justify-content: space-between;
-    width: 40%;
+  display: flex;
+  align-items: center;
+  @import "../../../common/styles/common.css";
+  justify-content: space-between;
+  width: 40%;
 }
 
 .filter-bar__selector label {
-    width: 25%;
+  width: 25%;
 }
 
 .filter-bar__selector select {
-    width: 75%;
+  width: 75%;
 }
 
-.filter-bar__input label{
-    width: 35%;
+.filter-bar__input label {
+  width: 35%;
 }
 
-.filter-bar__input input{
-    width: 55%;
+.filter-bar__input input {
+  width: 55%;
 }
 
-.filter-bar__input button{
-    background-color: var(--grey-25);
-    border: none;
-    border-radius: 5px;
-    color: var(--white-100);
-    font-weight: bold;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    outline: none;
+.filter-bar__input button {
+  background-color: var(--grey-25);
+  border: none;
+  border-radius: 5px;
+  color: var(--white-100);
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
 }
 
 .filter-bar__input button:hover {
-    background-color: var(--grey-50);
+  background-color: var(--grey-50);
 }
-
-

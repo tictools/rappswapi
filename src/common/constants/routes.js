@@ -1,5 +1,5 @@
 export const ROUTES = {
-  HOME: '/',
-  CATEGORIES: '/categories',
-  DETAIL_CARD: '/:resourcePath/:index'
-}
+  HOME: "/",
+  CATEGORIES: "/categories",
+  DETAIL_CARD: "/:resourcePath/:index",
+};

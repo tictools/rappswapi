@@ -1,1 +1,1 @@
-export const DEFAULT_GLOBAL_CONTEXT = {}
+export const DEFAULT_GLOBAL_CONTEXT = {};

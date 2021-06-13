@@ -1,5 +1,5 @@
 @import "../../../common/styles/common.css";
 
 .category-section-empty__container {
-    composes: circular-modal from '../../styles/circular-modal.css';
+  composes: circular-modal from "../../styles/circular-modal.css";
 }

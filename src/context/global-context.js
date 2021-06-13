@@ -1,20 +1,31 @@
-import React, { useState } from 'react'
-import { DEFAULT_GLOBAL_CONTEXT, DEFAULT_STRING, INITIAL_VALUE } from '../common/constants'
+import React, { useState } from "react"
+import PropTypes from "prop-types"
+import {
+  DEFAULT_GLOBAL_CONTEXT,
+  DEFAULT_STRING,
+  INITIAL_VALUE,
+} from "../common/constants"
 
-const GlobalContext = React.createContext(DEFAULT_GLOBAL_CONTEXT)
+const propTypes = {
+  children: PropTypes.node.isRequired,
+}
 
 const DEFAULT_CONTEXT_STATE = {
   category: DEFAULT_STRING.EMPTY,
-  items: INITIAL_VALUE.LIST
+  items: INITIAL_VALUE.LIST,
 }
 
-export const GlobalContextProvider = ({children}) => {
-  const [ globalState, setGlobalState] = useState(DEFAULT_CONTEXT_STATE)
+const GlobalContext = React.createContext(DEFAULT_GLOBAL_CONTEXT)
+
+export const GlobalContextProvider = ({ children }) => {
+  const [globalState, setGlobalState] = useState(DEFAULT_CONTEXT_STATE)
   return (
-  <GlobalContext.Provider value={{ globalState, setGlobalState }}>
-    {children}
-  </GlobalContext.Provider>
+    <GlobalContext.Provider value={{ globalState, setGlobalState }}>
+      {children}
+    </GlobalContext.Provider>
   )
 }
+
+GlobalContextProvider.propTypes = propTypes
 
 export default GlobalContext

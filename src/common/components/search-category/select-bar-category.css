@@ -1,45 +1,45 @@
 @import "../../../common/styles/common.css";
 
 .search-category__container {
-    width: 50%;
+  width: 50%;
 }
 .search-category__list {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .search-category__item {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    padding: 5px;
-    margin: 0;
-    width: 20%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  margin: 0;
+  width: 20%;
 }
 .search-category__button {
-    composes: link-base from '../../styles/link.css';
-    align-items: center;
-    border: none;
-    border-color: var(--grey-50);
-    border-radius: 5px;
-    background-color: var(--grey-50);
-    color: var(--white-100);
-    display: flex;
-    font-weight: normal;
-    justify-content: center;
-    outline: none;
-    text-transform: uppercase;
-    width: 100%;
+  composes: link-base from "../../styles/link.css";
+  align-items: center;
+  border: none;
+  border-color: var(--grey-50);
+  border-radius: 5px;
+  background-color: var(--grey-50);
+  color: var(--white-100);
+  display: flex;
+  font-weight: normal;
+  justify-content: center;
+  outline: none;
+  text-transform: uppercase;
+  width: 100%;
 }
 
 .search-category__button:hover {
-    background-color: var(--star-wars--yellow-75);
-    border: none;
-    color: var(--grey-75);
-    cursor: pointer;
-    font-width: bold;
+  background-color: var(--star-wars--yellow-75);
+  border: none;
+  color: var(--grey-75);
+  cursor: pointer;
+  font-width: bold;
 }

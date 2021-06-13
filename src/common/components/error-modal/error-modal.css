@@ -8,14 +8,14 @@
 }*/
 
 .error-modal__container {
-    margin-top: var(--margin-top--category-section);
-    composes: circular-modal from '../../styles/circular-modal.css';
+  margin-top: var(--margin-top--category-section);
+  composes: circular-modal from "../../styles/circular-modal.css";
 }
 
 .error-modal__content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
 }
