@@ -8,8 +8,8 @@ export const getVehicleModel = (vehicle) => {
     passengers,
     length,
     max_atmosphering_speed,
-    vehicle_class
-  } = vehicle.result.properties
+    vehicle_class,
+  } = vehicle.result.properties;
 
   return {
     header: name,
@@ -20,6 +20,6 @@ export const getVehicleModel = (vehicle) => {
     passengers,
     length,
     max_atmosphering_speed,
-    vehicle_class
-  }
-}
+    vehicle_class,
+  };
+};

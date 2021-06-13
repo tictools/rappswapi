@@ -1,5 +1,4 @@
 export const getPlanetModel = (planet) => {
-  debugger
   const {
     name,
     rotation_period,
@@ -9,7 +8,7 @@ export const getPlanetModel = (planet) => {
     gravity,
     terrain,
     surface_water,
-    population
+    population,
   } = planet.result.properties
 
   return {
@@ -21,6 +20,6 @@ export const getPlanetModel = (planet) => {
     gravity,
     terrain,
     surface_water,
-    population
+    population,
   }
 }

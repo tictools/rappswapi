@@ -7,7 +7,7 @@ export const getPeopleModel = (people) => {
     skin_color,
     eye_color,
     birth_year,
-    gender
+    gender,
   } = people.result.properties
 
   return {
@@ -18,6 +18,6 @@ export const getPeopleModel = (people) => {
     skin_color,
     eye_color,
     birth_year,
-    gender
+    gender,
   }
 }

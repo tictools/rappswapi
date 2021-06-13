@@ -9,8 +9,8 @@ export const getStarshipModel = (starship) => {
     length,
     max_atmosphering_speed,
     hyperdrive_rating,
-    starship_class
-  } = starship.result.properties
+    starship_class,
+  } = starship.result.properties;
 
   return {
     header: name,
@@ -22,6 +22,6 @@ export const getStarshipModel = (starship) => {
     length,
     max_atmosphering_speed,
     hyperdrive_rating,
-    starship_class
-  }
-}
+    starship_class,
+  };
+};

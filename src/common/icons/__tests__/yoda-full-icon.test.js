@@ -1,18 +1,18 @@
-import React from 'react'
-import { shallow } from 'enzyme'
-import { createEnzymeAdapter } from '../../../../test/enzyme-adapter'
-import { YodaFullIcon } from '../yoda-full-icon'
+import React from "react";
+import { shallow } from "enzyme";
+import { createEnzymeAdapter } from "../../../../test/enzyme-adapter";
+import { YodaFullIcon } from "../yoda-full-icon";
 
-createEnzymeAdapter()
+createEnzymeAdapter();
 
-describe('<YodaFullIcon />', () => {
+describe("<YodaFullIcon />", () => {
   const mockedBaseProps = {
-    size: 150
-  }
+    size: 150,
+  };
 
-  test('should get the correct DarthVaderIcon path', () => {
-    const wrapper = shallow(<YodaFullIcon {...mockedBaseProps} />)
+  test("should get the correct DarthVaderIcon path", () => {
+    const wrapper = shallow(<YodaFullIcon {...mockedBaseProps} />);
 
-    expect(wrapper.html()).toMatchSnapshot()
-  })
-})
+    expect(wrapper.html()).toMatchSnapshot();
+  });
+});

@@ -1,11 +1,11 @@
-const path = require('path')
-const express = require('express')
+const path = require("path");
+const express = require("express");
 
-const PORT = process.env.PORT || 8080
-const app = express()
+const PORT = process.env.PORT || 8080;
+const app = express();
 
-app.use(express.static(path.join(process.cwd(), 'dist')))
+app.use(express.static(path.join(process.cwd(), "dist")));
 
 app.listen(PORT, () => {
-  console.log(`Sever up and running in port ${PORT} ...`)
-})
+  console.log(`Sever up and running in port ${PORT} ...`);
+});

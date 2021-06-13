@@ -1,17 +1,17 @@
 .category-list__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 
 .category-list__header {
-    composes: section-header from '../../styles/section-header.css'
+  composes: section-header from "../../styles/section-header.css";
 }
 
 .category-list__list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }

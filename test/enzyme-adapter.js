@@ -1,5 +1,5 @@
-import Enzyme from 'enzyme'
-import Adapter from 'enzyme-adapter-react-16'
+import Enzyme from "enzyme";
+import Adapter from "enzyme-adapter-react-16";
 
 /**
  * Method dedicated to create Enzyme Adapter for Jest
@@ -7,5 +7,5 @@ import Adapter from 'enzyme-adapter-react-16'
  * @returns {Enzyme.<Adapter>}
  */
 export const createEnzymeAdapter = () => {
-  return Enzyme.configure({ adapter: new Adapter() })
-}
+  return Enzyme.configure({ adapter: new Adapter() });
+};
