@@ -4,7 +4,7 @@
 
 ### Compatible with IE11+.
 
-### [ [ https://rappswapi.herokuapp.com ] ](https://rappswapi.herokuapp.com/#/)
+### [ [ https://new-rappswapi.herokuapp.com/ ] ](https://new-rappswapi.herokuapp.com//#/)
 
 <img src="./src/common/images/svg/yoda.svg" alt="Yoda" width="200px">
 
