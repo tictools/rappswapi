@@ -78,6 +78,5 @@ export const FilterBar = ({ labels, onInputChange, onOptionChange }) => {
       </div>
     </div>
   );
-};
 
 FilterBar.propTypes = propTypes;
