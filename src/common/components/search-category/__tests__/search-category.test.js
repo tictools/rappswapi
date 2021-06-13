@@ -13,8 +13,13 @@ describe("SearchCategory", () => {
     BUTTON_ELEMENT_LENGTH: 6,
   }
   const handleCategorySearch = jest.fn()
+  const updateCategory = jest.fn()
+  const setGlobalState = jest.fn()
+
   const mockedProps = {
     handleCategorySearch,
+    updateCategory,
+    setGlobalState,
   }
 
   test("should render elements properly", () => {
@@ -28,12 +33,5 @@ describe("SearchCategory", () => {
     expect(ulElement).toHaveLength(EXPECTED.UL_ELEMENT_LENGTH)
     expect(liElements).toHaveLength(EXPECTED.LI_ELEMENT_LENGTH)
     expect(buttonElements).toHaveLength(EXPECTED.BUTTON_ELEMENT_LENGTH)
-  })
-
-  test("should call method when button clicked", () => {
-    const wrapper = shallow(<SelectBarCategory {...mockedProps} />)
-    const button = wrapper.find("button").at(0)
-    button.simulate("click")
-    expect(handleCategorySearch).toHaveBeenCalled()
   })
 })
